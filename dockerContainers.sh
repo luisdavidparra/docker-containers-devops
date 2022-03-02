@@ -30,8 +30,7 @@ docker run \
   --rm \
   --detach \
   --privileged \
-  --network jenkins \
-  --network-alias docker \
+  --network atnet \
   --env DOCKER_TLS_CERTDIR=/certs \
   --volume jenkins-docker-certs:/certs/client \
   --volume jenkins-data:/var/jenkins_home \
